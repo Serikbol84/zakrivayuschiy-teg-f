@@ -18,6 +18,7 @@
   background-size: cover;
   background-attachment: fixed;
   font-family: var(--font-main, 'Inter', sans-serif);
+  
   font-variation-settings: 'wght' var(--font-weight-regular);
   color: var(--main-color, #000000);
 
@@ -31,9 +32,9 @@
   padding-block: var(--header-title-padding);
   margin: 100px auto;
   font-family: var(--font-accent, 'PressStart2P', cursive);
-  inline-size: var(--header-title-width);
+  inline-size: var(--content-width);
   box-sizing: border-box;
-  border: 2px solid var(--main-color);
+  border: 2px solid var(--main-color, #000000);
   background-color: var(--bg-color, #FFFFFF);
 }
 
@@ -45,4 +46,24 @@
   font-size: var(--subtitle-font-size);
   text-transform: uppercase;
   justify-self: center;
+}
+
+/*=========================================== main section ================================================================*/
+.main {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  
+  inline-size: var(--content-width);
+  box-sizing: border-box;
+  border: 2px solid var(--main-color, #000000);
+  background-color: var(--bg-color, #FFFFFF);
+}
+
+.card__title {
+  font-size: 18px;
+  padding: 5px 10px;
 }
