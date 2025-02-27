@@ -13,4 +13,36 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--bg-color);
+  background-image: var(--page-bg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-main, 'Inter', sans-serif);
+  font-variation-settings: 'wght' var(--font-weight-regular);
+  color: var(--main-color, #000000);
+
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-block: var(--header-title-padding);
+  margin: 100px auto;
+  font-family: var(--font-accent, 'PressStart2P', cursive);
+  inline-size: var(--header-title-width);
+  box-sizing: border-box;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color, #FFFFFF);
+}
+
+.header__title {
+  font-size: var(--header-title-font-size);
+}
+
+.header__subtitle {
+  font-size: var(--subtitle-font-size);
+  text-transform: uppercase;
+  justify-self: center;
 }
