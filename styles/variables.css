@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --font-main: 'Inter', sans-serif;
-    --font-accent: 'PressStart2P', cursive;
+    --font-main: 'Inter-Variable', sans-serif;
+    --font-accent: 'PressStart2P-Regular', cursive;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
     --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -11,6 +11,8 @@
     --header-title-padding: clamp(7.5rem, 8.89vw, 8rem);
     --main-color: #000000;
     --bg-color: #FFFFFF;
+    --label-stroke-color: rgb(230 230 230 / 0.7); /*у меня просто верхнюю часть съедало. Поэтому пришлось импровизировать*/
+    --label-stroke-shadow-color: rgb(255 255 255 / 0.4);
     --page-bg:
         repeating-linear-gradient(to right, transparent 0 2px, #d3d3d3 2px 4px),
         repeating-linear-gradient(to bottom, transparent 0 2px, #d3d3d3 2px 4px),
