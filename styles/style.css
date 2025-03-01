@@ -54,7 +54,6 @@
 }
 
 .card {
-  
   inline-size: var(--content-width);
   box-sizing: border-box;
   border: 2px solid var(--main-color, #000000);
@@ -143,5 +142,74 @@
 }
 
 .save-button {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 0.9375em 1.3125em 0.9375em 1.1875em;
+  gap: 8px;
+  border: 2px solid var(--main-color, #000000);
+  margin-block-end: 103px;
+  background: var(--bg-color);
+}
+
+.save-button__icon {
+  inline-size: 21px;
+  block-size: 21px;
+}
+
+.diskette-icon {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.memory-dialog {
+  border: 2px solid var(--main-color, #000000);
+  padding: 0;
+}
+
+.memory-dialog::backdrop{
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(7px);
+}
+
+.dialog-content-wrapper {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  inline-size: 353px;
+}
+
+.dialog-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__icon {
+  inline-size: 39px;
+  block-size: 39px;
+  flex-shrink: 0;
+}
   
+.dialog__text {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.close-button {
+  padding: 11px 130.5px;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color, #000000);
+  background: transparent;
+  cursor: pointer;
+}
+
+.close-button .button__text {
+  text-transform: uppercase;
 }
