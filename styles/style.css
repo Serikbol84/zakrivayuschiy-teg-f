@@ -265,7 +265,7 @@
   text-transform: uppercase;
 }
 
-@media (width <= 376px) {
+@media (width <= 375px) {
   .card__label {
     right: 11px;
   }
