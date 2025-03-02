@@ -96,7 +96,7 @@
 }
   
 .like-icon.is-liked .main-body,
-.like-icon.is-liked .core{
+.like-icon.is-liked .core {
     fill: var(--heart-color, #FF0000);
 }
   
