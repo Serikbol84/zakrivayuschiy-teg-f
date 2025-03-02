@@ -9,3 +9,99 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+@keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+  
+@keyframes sparks {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+/*============== heart ====================*/
+.card__icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    inline-size: 39px;
+    block-size: 36px;
+}
+  
+.sparks {
+    opacity: 0;
+}
+  
+  /*=== heart hover ===*/
+.core, .main-body {
+    fill: transparent;
+    transition: fill 0.3s ease;
+}
+  
+.card__icon-button:hover .core {
+    fill: var(--main-color, #000000);
+    transition: fill 0.3s ease 0s;
+}
+  
+.card__icon-button:hover .main-body {
+    fill: var(--main-color, #000000);
+    transition: fill 0.3s ease 0.05s;
+}
+  
+.card__icon-button:not(:hover) .main-body {
+    fill: transparent;
+    transition: fill 0.3s ease 0s;
+}
+  
+.card__icon-button:not(:hover) .core {
+    fill: transparent;
+    transition: fill 0.3s ease 0.03s;
+}
+  
+  /*=== heart active ===*/
+.card__icon-button:active .core {
+    fill: var(--heart-color, #FF0000);
+    transition: fill 0.3s ease 0s;
+}
+  
+.card__icon-button:active .main-body {
+    fill: var(--heart-color, #FF0000);
+    transition: fill 0.3s ease 0.05s;
+}
+  
+.card__icon-button:active .contour {
+    fill: var(--heart-color, #FF0000);
+    transition: fill 0.3s ease 0.06s;
+}
+  
+.like-icon.is-liked .heart {
+    fill: var(--heart-color, #FF0000);
+    animation: scaleUp 0.3s ease-in 0.1s forwards;
+    transform-origin: center;
+}
+  
+.like-icon.is-liked .main-body,
+.like-icon.is-liked .core{
+    fill: var(--heart-color, #FF0000);
+}
+  
+.like-icon.is-liked .sparks {
+    fill: var(--heart-color, #FF0000);
+    animation: sparks 0.3s ease-in 0.3s forwards;
+    transform-origin: center;
+}

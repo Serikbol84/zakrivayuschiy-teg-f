@@ -20,7 +20,6 @@
   font-family: var(--font-main, 'Inter-Variable', sans-serif);
   font-variation-settings: 'wght' var(--font-weight-regular, 400);
   color: var(--main-color, #000000);
-
 }
 
 .header {
@@ -145,18 +144,11 @@
 }
 
 .card__controls {
-  padding: 1.567em;
+  padding: 1.566em;
   display: flex;
   justify-self: end;
   align-items: center;
-  gap: 12px;
-}
-
-.card__icon-button {
-  display: flex;
-  padding: 0;
-  border: none;
-  background: transparent;
+  gap: 7px;
 }
 
 .button-common {
@@ -191,7 +183,9 @@
 }
 
 .card__like-button {
-  padding: 0.69em 2.2em;
+  justify-content: center;
+  inline-size: 130px;
+  block-size: 38px;
 }
 
 .button__text {
@@ -295,3 +289,8 @@
     padding: 11px 113.5px;
   }
 }
+
+/*
+Очень торопился, поэтому много где не перевел пиксели в относительные единицы. 
+Работа с СВГ всю кровь высосало (часами сидел, то иконка появится, то пропадет), но проект очень интересный был. 
+*/
