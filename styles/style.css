@@ -269,7 +269,7 @@
   text-transform: uppercase;
 }
 
-@media (width <= 376px) {
+@media (width <= 375px) { /*Здесь я так и не понял. ставлю 375px - изменения происходят только на 374px*/
   .card__label {
     right: 11px;
   }
