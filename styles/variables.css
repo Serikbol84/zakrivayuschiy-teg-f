@@ -14,7 +14,7 @@
     --hover-text-color: #FFFFFF;
     --heart-color: #FF0000;
     --label-stroke-color: rgb(230 230 230 / 0.7); /*у меня просто верхнюю часть съедало. Поэтому пришлось импровизировать*/
-    --label-stroke-shadow-color: rgb(255 255 255 / 0.4);
+    --label-stroke-shadow-color: rgb(255 255 255 / 1);
     --page-bg:
         repeating-linear-gradient(to right, transparent 0 2px, #d3d3d3 2px 4px),
         repeating-linear-gradient(to bottom, transparent 0 2px, #d3d3d3 2px 4px),

@@ -36,18 +36,27 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    border: none;
     background: transparent;
     cursor: pointer;
     inline-size: 39px;
-    block-size: 36px;
+    block-size: 38px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.card__icon-button:focus {
+    outline: none;
+}
+
+.card__icon-button:focus-visible {
+    border-color: var(--main-color);
 }
   
 .sparks {
     opacity: 0;
 }
   
-  /*=== heart hover ===*/
+/*=== heart hover ===*/
 .core, .main-body {
     fill: transparent;
     transition: fill 0.3s ease;
@@ -73,7 +82,7 @@
     transition: fill 0.3s ease 0.03s;
 }
   
-  /*=== heart active ===*/
+/*=== heart active ===*/
 .card__icon-button:active .core {
     fill: var(--heart-color, #FF0000);
     transition: fill 0.3s ease 0s;
@@ -84,22 +93,22 @@
     transition: fill 0.3s ease 0.05s;
 }
   
-.card__icon-button:active .contour {
-    fill: var(--heart-color, #FF0000);
-    transition: fill 0.3s ease 0.06s;
-}
-  
 .like-icon.is-liked .heart {
     fill: var(--heart-color, #FF0000);
     animation: scaleUp 0.3s ease-in 0.1s forwards;
     transform-origin: center;
 }
-  
-.like-icon.is-liked .main-body,
+
 .like-icon.is-liked .core {
     fill: var(--heart-color, #FF0000);
+    transition: fill 0.3s ease 0s;
 }
   
+.like-icon.is-liked .main-body {
+    fill: var(--heart-color, #FF0000);
+    transition: fill 0.3s ease 0s;
+}
+
 .like-icon.is-liked .sparks {
     fill: var(--heart-color, #FF0000);
     animation: sparks 0.3s ease-in 0.3s forwards;
