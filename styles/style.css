@@ -220,10 +220,9 @@
   block-size: 100%;
 }
 
-.memory-dialog {
-  padding: 0;
+.memory-dialog { /*Убрал фиксированный block-size, вместо этого задал паддинг сверху и снизу по 30px.*/
+  padding: 30px 0;
   inline-size: 357px;
-  block-size: 191px;
   max-inline-size: 100%;
   max-block-size: 100%;
   display: none;
@@ -287,7 +286,6 @@
 
   .memory-dialog {
     inline-size: 341px;
-    block-size: 195px;
   }
 
   .dialog-content {
